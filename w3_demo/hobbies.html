@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="description" content="Week 3 Demo | Main frames">
+    <meta name="class and date" content="SE111.32 2022.01.24">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+<!-- Setting up a main frame .. Mainframe determines the main age structure for the entire site. -->
+
+
+<!-- Wrapper holds the entire page content -->
+
+
+
+<style> /* WE WRITE CSS INSIDE HERE */ /* WE WRITE CSS INSIDE HERE */ /* WE WRITE CSS INSIDE HERE */ 
+ /* element > class > IDS. Anything placed in line styling will take most importance. */ 
+
+   div{ 
+      border:1px solid black;
+      padding:10px;
+      margin:5px;
+   }
+
+
+   #wrapper{ /* Selecting the element with an id="wrapper" */  
+      width: 900px; /* allows content to stay centered inside of the browser */ 
+      margin:auto; /* Value of auto means element must have a width specified; 
+      auto gives equal space on left and right sides of element*/ 
+   }
+
+
+   #nav {
+      border:1px solid red; /* ID takes importance over element type in styling*/ 
+      text-align: center; 
+   }
+
+
+   #footer {
+      text-align:center;
+   }
+
+
+   .border {
+      border:2px solid grey;
+      margin-bottom:10px; /* can isolate margin/padding/border based on sides: -top, -right, -bottom, -left */ 
+
+
+   }
+
+   body{
+      background-color: rgb(185, 159, 113)
+   }
+
+
+   .bg-main {
+      background-color: white; 
+   }
+
+   .link {
+      font-size:26px;
+      text-decoration: none;
+      background-color: white;
+      margin-right: 15px;
+      width: 150px;
+      padding: 10px;
+   }
+
+   .link:hover{
+      background-color: brown;
+
+
+   }
+
+
+</style>
+
+
+
+   <div id ="wrapper"> <!-- // WRAPPER -->
+
+      <!-- HEADER is the content that the page loads first/at the top-->
+
+      <div id="header" class= "border bg-main"> <!-- // HEADER ONE-->
+         <h1 id="title">HOME PAGE</h1>
+      </div>
+
+
+      <div id ="nav" class= "border"> <!-- // NAVIGATION BAR-->
+         <a href="index.html" class="link">HOME</a> <!-- home and about will be the same page. AKA your bio will be at the home page.-->
+         <a href="about.html" class="link">ABOUT</a>
+         <a href="schools.html" class="link">SCHOOLS</a>
+         <a href="hobbies.html" class="link">HOBBIES</a> <!-- INLINE ELEMENTS. THEY WILL ALL go HORIZONTALLY.-->
+      </div>
+
+
+      <div id ="Content" class= "border"> <!-- // MAIN CONTENT. usually the only thing that changes page to page.-->
+         <p> content of HOBBIES page</p>
+      </div>
+
+
+      <div id ="footer" class= "border bg-main"> 
+         <a href="#">BACK TO TOP</a> <!-- go back up.. -->
+         <p>&copy; 2022, C Andrew| SE111.32 </p> <!-- copyright-->
+
+         <!-- image of validation will go; style="width: 100%"-->
+      </div>
+
+
+   </div>
+
+
+</body>
+</html>
