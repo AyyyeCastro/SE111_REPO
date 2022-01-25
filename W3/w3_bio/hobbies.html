@@ -15,20 +15,22 @@
 
 <!-- STYLIZE THIS PROJECT.-->  
 <style>
-    body{background-color: rgb(199, 199, 199);}
+    body{background-color: rgb(168, 105, 94)}
 
     body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue'} 
 
     #nav {
     position: fixed;
-    top: 0;
+    upper: 0;
     width: 100%;
     list-style-type: none;
     margin: -8px;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(78, 78, 78);}
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0 2px 10px 0 rgba(9, 10, 10, 0.301);}
+    
 
     .nav-id {
     float: left}
@@ -41,19 +43,30 @@
     text-decoration: none;}
 
     li a:hover {
-    background-color: rgb(124, 124, 124);}
-
-    #main{
-        background-color: rgb(228, 227, 227);
-        margin: -8px;
-        padding: 50px;}
+    background-color: rgb(51, 51, 51);}
 
     #header{
     padding: 15px;
     margin: -8px;
-    background-color: rgb(113, 160, 172);
-    font-size: 25px;
-    color: rgb(212, 212, 212);}
+    background-color: rgb(168, 105, 94);
+    font-size: 30px;
+    color: rgb(236, 236, 236);
+    text-align: center;}
+
+
+    #upper{background-color: rgb(236, 236, 236);
+        padding: 15px;
+        margin: -8px;
+        font-size: 18px;
+        color: black
+    }
+
+    #middle{background-color: rgb(78, 78, 78);;
+        padding: 15px;
+        margin: -8px;
+        font-size: 18px;
+        color: rgb(212, 212, 212)
+    }
 
     #title{
     text-align: center;}
@@ -61,7 +74,7 @@
     #footer{
     padding: 15px;
     margin: -8px;
-    background-color: rgb(113, 160, 172);
+    background-color: rgb(168, 105, 94);
     color: rgb(212, 212, 212);
     text-align: center;}
 
@@ -83,12 +96,12 @@
 
         <!-- HEADER -->
         <div id="header" class= "border bg-main"> <!-- // HEADER ONE-->
-           <h1 id="title" style="font-family: cursive;">Andrew Castro</h1>
+           <h1 style="font-family: cursive;">Andrew Castro</h1>
         </div>
 
            <!-- MAIN BODY BEGIN BEGIN BEGIN-->
 
-           <div id="main" class ="hobbies">
+           <div id="upper" class ="hobbies">
             <h2 style = "text-align: center; font-family: Montserrat, sans-serif;">HOBBIES</h2> <!-- BIOGRAPHY-->
             <hr>
 
@@ -97,13 +110,14 @@
             - Languages/culture<br>
             - Fashion<br>
             - Technology<br><br></b>
-
-            <img src="main-images/2021-12-11_21-00-59-524_Eorzea 2.0.png" alt id="Unknown_Source" style = "width: 100%; border: 4px dotted black;" >
-            <img src="main-images/week_5.jfif" alt id="Unknown_Source2" style = "width: 100%; border: 4px dotted black;" >
         </div>
 
+        <div id ="middle">
+        <img src="main-images/2021-12-11_21-00-59-524_Eorzea 2.0.png" alt id="Unknown_Source" style = "width: 100%; border: 4px dotted black;" >
+            <img src="main-images/week_5.jfif" alt id="Unknown_Source2" style = "width: 100%; border: 4px dotted black;"></div>
+
          <!-- FOOOTER BEGIN --> 
-        <div id ="footer" class= "border bg-main"> 
+         <div id ="footer" class= "border bg-main">
            <a href="#">BACK TO TOP</a> <!-- go back up.. -->
            <p>&copy; 2022, C Andrew | SE111.32 </p> <!-- copyright-->
   
