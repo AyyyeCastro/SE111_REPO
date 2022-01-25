@@ -20,7 +20,7 @@
     body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue'} 
 
-    ul {
+    #nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,7 +30,7 @@
     overflow: hidden;
     background-color: rgb(78, 78, 78);}
 
-    li {
+    .nav-id {
     float: left}
 
     li a {
@@ -68,29 +68,23 @@
     html {
     scroll-behavior: smooth;}
     
-</style> 
-<!-- STYLE ENDS HERE -->
-
+</style> <!-- STYLE ENDS HERE -->
 </head>
 
 
 <body>
-    
     <div id ="wrapper"> <!-- // WRAPPER -->
 
-        <div id="navigation" class = "navbar">
-            <ul>
-                <li><a class="links" href="index.html"><i class="fas fa-home"></i> HOME</a></li>
-                <li><a href="schools.html"><i class="fas fa-graduation-cap"></i> SCHOOLS</a></li>
-                <li><a href="hobbies.html"><i class="fas fa-gamepad"></i> HOBBIES</a></li>
-              </ul></div>
+        <ul id = "nav">
+            <li class="nav-id"><a class="links" href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+            <li class="nav-id"><a href="schools.html"><i class="fas fa-graduation-cap"></i> SCHOOLS</a></li>
+            <li class="nav-id"><a href="hobbies.html"><i class="fas fa-gamepad"></i> HOBBIES</a></li>
+        </ul>
 
         <!-- HEADER -->
         <div id="header" class= "border bg-main"> <!-- // HEADER ONE-->
            <h1 id="title" style="font-family: cursive;">Andrew Castro</h1>
         </div>
-
-          
 
            <!-- MAIN BODY BEGIN BEGIN BEGIN-->
 
@@ -104,20 +98,17 @@
             - Fashion<br>
             - Technology<br><br></b>
 
-
-            <img src="main-images\2021-12-11_21-00-59-524_Eorzea 2.0.png" alt id="Unknown_Source" style = "width: 100%; border: 4px dotted black;" >
-            <img src="main-images\week_5.jfif" alt id="Unknown_Source" style = "width: 100%; border: 4px dotted black;" >
+            <img src="main-images/2021-12-11_21-00-59-524_Eorzea 2.0.png" alt id="Unknown_Source" style = "width: 100%; border: 4px dotted black;" >
+            <img src="main-images/week_5.jfif" alt id="Unknown_Source2" style = "width: 100%; border: 4px dotted black;" >
         </div>
 
-
          <!-- FOOOTER BEGIN --> 
-        <div id ="footer" class= "border bg-main""> 
+        <div id ="footer" class= "border bg-main"> 
            <a href="#">BACK TO TOP</a> <!-- go back up.. -->
            <p>&copy; 2022, C Andrew | SE111.32 </p> <!-- copyright-->
   
            <!-- image of validation will go; style="width: 100%"-->
         </div>
+    </body>
 
-    
-</body>
 </html>

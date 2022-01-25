@@ -17,10 +17,9 @@
 <style>
     body{background-color: rgb(199, 199, 199);}
 
-    body, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue'} 
+    body, h1, h2, h3, h4, h5, h6 {font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue'} 
 
-    ul {
+    #nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -30,8 +29,7 @@
     overflow: hidden;
     background-color: rgb(78, 78, 78);}
 
-    li {
-    float: left}
+    .nav-id {float: left}
 
     li a {
     display: block;
@@ -40,8 +38,7 @@
     padding: 15px 40px;
     text-decoration: none;}
 
-    li a:hover {
-    background-color: rgb(124, 124, 124);}
+    li a:hover {background-color: rgb(124, 124, 124);}
 
     #main{
         background-color: rgb(228, 227, 227);
@@ -65,35 +62,27 @@
     color: rgb(212, 212, 212);
     text-align: center;}
 
-    html {
-    scroll-behavior: smooth;}
+    html {scroll-behavior: smooth;}
     
-</style> 
-<!-- STYLE ENDS HERE -->
-
+</style> <!-- STYLE ENDS HERE -->
 </head>
 
 
 <body>
-    
     <div id ="wrapper"> <!-- // WRAPPER -->
 
-        <div id="navigation" class = "navbar">
-            <ul>
-                <li><a class="links" href="index.html"><i class="fas fa-home"></i> HOME</a></li>
-                <li><a href="schools.html"><i class="fas fa-graduation-cap"></i> SCHOOLS</a></li>
-                <li><a href="hobbies.html"><i class="fas fa-gamepad"></i> HOBBIES</a></li>
-              </ul></div>
+        <ul id = "nav">
+            <li class="nav-id"><a class="links" href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+            <li class="nav-id"><a href="schools.html"><i class="fas fa-graduation-cap"></i> SCHOOLS</a></li>
+            <li class="nav-id"><a href="hobbies.html"><i class="fas fa-gamepad"></i> HOBBIES</a></li>
+        </ul>
 
         <!-- HEADER -->
         <div id="header" class= "border bg-main"> <!-- // HEADER ONE-->
             <h1 id="title" style="font-family: cursive;">Andrew Castro</h1>
          </div>
 
-          
-
           <!-- MAIN BODY BEGIN BEGIN BEGIN-->
-
           <div id="main" class ="schools">
               <h2 style = "text-align: center; font-family: Montserrat, sans-serif;">SCHOOLS</h2> <!-- BIOGRAPHY-->
               <hr>
@@ -103,16 +92,9 @@
               - Toll Gate High School <br>
               - Winman Junior High School <br></b><br>
 
-              <img src="main-images\highschool.jpg" alt id="Unknown_Source" style = "width: 100%; border: 4px dotted black;">
-          </div>
-          <!-- MAIN BODY END END END -->
-
-        
-         
-        
+              <img src="main-images/highschool.jpg" alt id="Unknown_Source" style = "width: 100%; border: 4px dotted black;">
+          </div> <!-- MAIN BODY END END END -->     
     </div> 
-  
-
 
          <!-- FOOOTER BEGIN --> 
         <div id ="footer" class= "border bg-main"> 
