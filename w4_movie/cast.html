@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Andrew Castro">
+    <meta name="Assignment" content="Week 4 | Movie Assignment">
+    <meta name="class and date" content="SE111.32 2022.01.31">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>FFXIV</title>
+
+    <style> /* STYLE BEGIN --> */
+        body, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue'}
+
+        html, body {
+            margin: 0;
+            height: 100%;
+                        }
+
+        body {background-color: rgb(68, 32, 199);
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-areas: "main" "footer";
+            grid-template-rows: 1fr 80px;
+                                        }
+
+        #container {
+            background-color: #e0e0e0;
+            grid-area: main;
+                            }
+        #footer {
+            grid-area: footer;
+            background-color: #d1d0d0;
+            color: rgb(68, 67, 67);
+            text-align: center;
+            text-decoration: none;
+                                }
+
+        html {
+            scroll-behavior: smooth;}
+    
+        #nav {
+            width: 100%;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(243, 243, 243);
+            box-shadow: 0 2px 10px 0 rgba(9, 10, 10, 0.192);}
+        
+        .links {
+            float: left}
+
+        /* selected link blink color */
+        li a:active {
+            color: rgb(68, 32, 199);
+                        }
+
+    
+        li a {
+            display: block;
+            color: rgb(51, 51, 51);
+            text-align: center;
+            padding: 20px 40px;
+            text-decoration: none;
+            }
+    
+        li a:hover {
+            background-color: rgb(88, 88, 88, 0.295);}
+    
+        #header{
+            padding: 1px;
+            background-color: rgb(68, 32, 199);
+            font-size: 30px;
+            color: rgb(236, 236, 236);
+            text-align: center;}
+
+
+        /* THE BELOW ELEMENTS WILL NOT BE THE SAME ON EVERY PAGE. */
+        #content{
+            padding: 35px;
+            font-size: 16px;
+            text-align: center;}
+
+        .character{
+            padding: 35px;
+            font-size: 16px;
+            }
+
+    </style> <!-- STYLE ENDS HERE -->
+
+</head>
+<body>
+   <!--- CONTAINER BEGIN -->
+   <div id ="container">
+
+        <hr> <!-- RULE --> 
+
+        <!-- HEADER BEGIN -->
+        <div id = "header" > 
+            <h1>Final Fantasy XIV</h1>
+        </div>
+
+        <ul id = "nav">
+            <li class="nav-id"><a class="links" href="index.html"><b> HOME</b></a></li>
+            <li class="nav-id"><a class="links" href="cast.html" style="background-color: rgb(88, 88, 88); color: white"><b> CAST</b></a></li>
+            <li class="nav-id"><a class="links" href="review.html"><b> REVIEW</b></a></li>
+        </ul>
+
+        <hr> <!-- RULE -->
+
+        <!-- CONTENT BEGIN -->
+        <div id="content">
+            <h2 style="color: rgb(51, 51, 51);">CAST</h2>
+
+            <div class="character"> 
+                <h3>Colin Ryan</h3> <!-- NAME OF ACTOR -->
+                <img src ="images/Alphinaud.jpg" alt id ="avie1" style = "Height: 50px"> <!-- IMG OF ACTOR-->
+                <P>Alphinaud</P> <!-- NAME OF CHARACTER-->
+             </div>
+             <hr>
+
+             <div class="character"> 
+                <h3>Alisae</h3> <!-- NAME OF ACTOR -->
+                <img src ="images/Alisae.jpg" alt id ="avie2" style = "Height: 50px"> <!-- IMG OF ACTOR-->
+                <P>Bethan Walker</P> <!-- NAME OF CHARACTER-->
+             </div>
+             <hr>
+
+             <div class="character"> 
+                <h3>Robert Vernon</h3> <!-- NAME OF ACTOR -->
+                <img src ="images/Estinient.jpg" alt id ="avie3" style = "Height: 50px"> <!-- IMG OF ACTOR-->
+                <P>Estinien</P> <!-- NAME OF CHARACTER-->
+             </div>
+             <hr>
+
+             <div class="character"> 
+                <h3>Laura Aikamn</h3> <!-- NAME OF ACTOR -->
+                <img src ="images/Lyse.jpg" alt id ="avie4" style = "Height: 50px"> <!-- IMG OF ACTOR-->
+                <P>Lyse</P> <!-- NAME OF CHARACTER-->
+             </div>
+             <hr>
+
+             <div class="character"> 
+                <h3>Bob Smith</h3> <!-- NAME OF ACTOR -->
+                <img src ="images/Graha.jpg" alt id ="avie5" style = "Height: 50px"> <!-- IMG OF ACTOR-->
+                <P>Graha</P> <!-- NAME OF CHARACTER-->
+             </div>
+             <hr>
+
+             <div class="character"> 
+                <h3>Andrew Castro</h3> <!-- NAME OF ACTOR -->
+                <img src ="images/me.png" alt id ="avie6" style = "Height: 50px"> <!-- IMG OF ACTOR-->
+                <P>My Self</P> <!-- NAME OF CHARACTER-->
+             </div>
+             <hr>
+        </div> <!-- CONTAINER END-->
+
+        <hr> <!-- RULE -->
+                 <!-- IMAGE ELEMENT WITH W3C VALIDATION OF THIS* PAGE -->
+                 <img src="images/valid_cast.png">
+
+        <!-- FOOTER BEGIN-->
+        <div id = "footer">
+            <a href="#header">Back Up</a>
+            <BR>
+        </div>
+   </div> <!-- container end -->
+   
+</body>
+</html>

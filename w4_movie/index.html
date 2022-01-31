@@ -1,16 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Andrew Castro's Portfolio">
-    <meta name="last updated" content="2022.01.29 [year.month.date]">
+    <meta name="author" content="Andrew Castro">
+    <meta name="Assignment" content="Week 4 | Movie Assignment">
+    <meta name="class and date" content="SE111.32 2022.01.31">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Castro| W4 Movie</title>
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>FFXIV</title>
 
-    <script src="https://kit.fontawesome.com/335d3eb0f3.js" crossorigin="anonymous"></script>
- 
     <style> /* STYLE BEGIN --> */
         body, h1, h2, h3, h4, h5, h6 {
         font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue'} 
@@ -20,7 +18,7 @@
             height: 100%;
                         }
 
-        body {background-color: #d1d0d0;
+        body {background-color: rgb(243, 243, 243);
             display: grid;
             grid-gap: 10px;
             grid-template-columns: 1fr;
@@ -28,22 +26,22 @@
             grid-template-rows: 1fr 80px;
                                         }
 
-        main {
+        #container {
             background-color: #e0e0e0;
             grid-area: main;
                             }
-        footer {
+        #footer {
             grid-area: footer;
             background-color: #d1d0d0;
             color: rgb(68, 67, 67);
             text-align: center;
+            text-decoration: none;
                                 }
 
         html {
             scroll-behavior: smooth;}
     
         #nav {
-            position: fixed;
             width: 100%;
             list-style-type: none;
             margin: 0px;
@@ -57,7 +55,7 @@
 
         /* selected link blink color */
         li a:active {
-            color: rgb(78, 168, 112)
+            color: rgb(68, 32, 199);
                         }
 
     
@@ -65,7 +63,7 @@
             display: block;
             color: rgb(51, 51, 51);
             text-align: center;
-            padding: 15px 40px;
+            padding: 20px 40px;
             text-decoration: none;
             }
     
@@ -74,86 +72,70 @@
     
         #header{
             padding: 1px;
-            background-color: rgb(78, 168, 112);
+            background-color: rgb(68, 32, 199);
             font-size: 30px;
             color: rgb(236, 236, 236);
             text-align: center;}
 
-        #logo {  
-            width: 3%}
-
-
         /* THE BELOW ELEMENTS WILL NOT BE THE SAME ON EVERY PAGE. */
-        #first-container{
+        #content{
             padding: 35px;
             font-size: 16px;
-        text-align: center;}
+            text-align: center;}
 
-        #second-container{
+        #info{
             padding: 35px;
             font-size: 16px;
             }
+    </style> <!-- STYLE ENDS HERE -->
 
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40%;
-            border: 4px solid #555;
-            }
+</head>
+<body>
+   <!--- CONTAINER BEGIN -->
+   <div id ="container">
 
-        </style> <!-- STYLE ENDS HERE -->
-    </head> <!-- HEAD ENDS HERE-->
-    
-    <body>
-        <main> <!-- // WRAPPER -->
-    
-            <!-- NAVIGATION -->
-            <ul id = "nav">
-                <li class="nav-id"><a class="links" href="home.html" style="background-color: rgb(88, 88, 88); color: white"><i class="fas fa-campground"></i><b> HOME</b></a></li>
-                <li class="nav-id"><a class="links" href="projects.html"><i class="fas fa-leaf"></i></i><b> PROJECTS</b></a></li>
-            </ul>
+        <hr> <!-- RULE --> 
 
-            <!-- WEBSITE HEADER-->
-            <div id = "header"><h1><BR> <img src="images\te_logo.png" id="logo" />Tangled Effort</h1></div>
+        <!-- HEADER BEGIN -->
+        <div id = "header" > 
+            <h1>Final Fantasy XIV</h1>
+        </div>
 
-                <div id ="first-container"><h2 style = "text-align: center; font-family: Montserrat, sans-serif;"><br><br>BIOGRAPHY</h2> <!-- UUPPER TITLE -->
-                    <hr> <!-- LINE BELOW UPPER TITLE-->
-                    <p>I am a freshmen Software Engineer attending New England Institute of Technology. As of Winter 2022, I am only currently in my second term of my associates degree, but I will be pursing a
-                        Bachelor's degree in Software Engineering. This portfolio website will act as the hub for all of my projects throughout NEIT. Not only will this allow me to return to my previous education, but it will also display the
-                        the growth in my abilities. Hence, the sprout logo. <br><br>
+        <ul id = "nav">
+            <li class="nav-id"><a class="links" href="index.html" style="background-color: rgb(88, 88, 88); color: white"><b> HOME</b></a></li>
+            <li class="nav-id"><a class="links" href="cast.html"><b> CAST</b></a></li>
+            <li class="nav-id"><a class="links" href="review.html"><b> REVIEW</b></a></li>
+        </ul>
 
-                        <img src="https://66.media.tumblr.com/4e71b4d670886e536245c392aea24f5e/tumblr_puipanvVOr1yqmzv9o1_500.gif" alt ="Unknown_img1" class="center">
-                    </p>
-                </div>   
-    
-            <div id ="second-container"><h2 style = "text-align: center; font-family: Montserrat, sans-serif;"><br><br>CURRENT EDUCATION</h2> <!-- UUPPER TITLE -->
-                    <hr> <!-- LINE BELOW UPPER TITLE-->
-                    <h3><br>Basic Python</h3> <!-- FIRST LIST-->
-                    <UL>
-                        <li>Flowcharts</li>
-                        <li>Data Types & Variables</li>
-                        <li>Format methods (.split, .lower, .upper, .format)</li>
-                        <li>Input & Output</li>
-                        <li>While, For, and Conditional Loops</li>
-                        <li>Functions</li>
-                    </UL>
-                    <h3><br>Basic HTML & CSS</h3> <!-- SECOND LIST-->
-                    <UL>
-                        <li>Mainframes</li>
-                        <li>HTML & Website File Structures</li>
-                        <li>Anchor, Image, & Meta Tags</li>
-                        <li>ID Attributes</li>
-                        <li>Basic Styling (as shown on this Portfolio)</li>
-                    </UL>
-            </div>   
-        </main> <!-- // WRAPPER END -->
- 
-            <footer>
-               <p>&copy; 2022 - ∞, C Andrew</p> <!-- copyright-->
-               <a href="#">BACK TO TOP</a> <!-- go back up.. -->
-      
-               <!-- image of validation will go; style="width: 100%"-->
-            </footer>
+        <hr> <!-- RULE -->
+
+        <!-- CONTENT BEGIN -->
+        <div id="content">
+            <h2>HOME</h2>
+
+            <img src ="images/ffxiv-cover.jpg" alt id ="ffxiv_cover" style="border: 5px solid rgb(51, 51, 51);"> <!-- finish source from folder/online-->
+
+            <!-- INFO BEGIN -->
+            <div id="info">
+                <p><b>Company Credits:</b> Square Enix</p>
+                <p><b>Release Date:   </b> 2014       </p>
+                <p><b>Genre:          </b> 9.0/10     </p>
+                <p><b>Running Time:   </b> 400 Hours  </p> <!-- YES, THE STORY IS ACTUALLY ABOUT 400 HOURS lONG! Each expansion is about ~80 hours of STORY.-->
+            </div>
+        </div> <!-- CONTAINER END-->
+
+        <hr> <!-- RULE -->
+
+                 <!-- IMAGE ELEMENT WITH W3C VALIDATION OF THIS* PAGE -->
+                 <img src="images/valid_index.png">
+
+        <!-- FOOTER BEGIN-->
+        <div id = "footer">
+            <a href="#header">Back Up</a>
+            <BR>
+
+        </div>
+   </div> <!-- container end -->
+   
 </body>
 </html>

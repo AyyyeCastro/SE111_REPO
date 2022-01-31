@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Andrew Castro">
+    <meta name="Assignment" content="Week 4 | Movie Assignment">
+    <meta name="class and date" content="SE111.32 2022.01.31">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>FFXIV</title>
+
+    <style> /* STYLE BEGIN --> */
+        body, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue'}
+
+        html, body {
+            margin: 0;
+            height: 100%;
+                        }
+
+        body {background-color: #d1d0d0;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-areas: "main" "footer";
+            grid-template-rows: 1fr 80px;
+                                        }
+
+        #container {
+            background-color: #e0e0e0;
+            grid-area: main;
+                            }
+        #footer {
+            grid-area: footer;
+            background-color: #d1d0d0;
+            color: rgb(68, 67, 67);
+            text-align: center;
+            text-decoration: none;
+                                }
+
+        html {
+            scroll-behavior: smooth;}
+    
+        #nav {
+            width: 100%;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(243, 243, 243);
+            box-shadow: 0 2px 10px 0 rgba(9, 10, 10, 0.192);}
+        
+        .links {
+            float: left}
+
+        /* selected link blink color */
+        li a:active {
+            color: rgb(68, 32, 199);
+                        }
+
+    
+        li a {
+            display: block;
+            color: rgb(51, 51, 51);
+            text-align: center;
+            padding: 20px 40px;
+            text-decoration: none;
+            }
+    
+        li a:hover {
+            background-color: rgb(88, 88, 88, 0.295);}
+    
+        #header{
+            padding: 1px;
+            background-color: rgb(68, 32, 199);
+            font-size: 30px;
+            color: rgb(236, 236, 236);
+            text-align: center;}
+
+
+        /* THE BELOW ELEMENTS WILL NOT BE THE SAME ON EVERY PAGE. */
+        #content{
+            padding: 35px;
+            font-size: 16px;
+            text-align: center;}
+
+        .info{
+            padding: 35px;
+            font-size: 16px;
+            }
+
+    </style> <!-- STYLE ENDS HERE -->
+
+</head>
+<body>
+   <!--- CONTAINER BEGIN -->
+   <div id ="container">
+
+        <hr> <!-- RULE --> 
+
+        <!-- HEADER BEGIN -->
+        <div id = "header" > 
+            <h1>Final Fantasy XIV</h1>
+        </div>
+
+        <ul id = "nav">
+            <li class="nav-id"><a class="links" href="index.html"><b> HOME</b></a></li>
+            <li class="nav-id"><a class="links" href="cast.html"><b> CAST</b></a></li>
+            <li class="nav-id"><a class="links" href="review.html" style="background-color: rgb(88, 88, 88); color: white"><b> REVIEW</b></a></li>
+        </ul>
+
+        <hr> <!-- RULE -->
+
+        <!-- CONTENT BEGIN -->
+        <div id="content">
+            <h2 style="color: rgb(51, 51, 51);">REVIEW</h2>
+
+            <P style ="font-size: 20px;"><b>Andrew Castro</b> <i>2022.01.31</i></P>
+
+            <P style ="text-align: left; font-size: 18px;">
+
+                <br> <br><em>This review <b>will</b> contain potential spoilers. Please refrain from reading if this may effect you.</em> <br> <br>
+            
+                <em>Final Fantasy XIV</em> is a movie about the Seven Scions of The Seventh Dawn in the world of Eorzea. Starting from A Realm Reborn (the initial movie), we are introduced to the Mother Crystal. 
+                We do not yet know the Mother Crystal's identity, or her intentions... We can only <i>Hear, Feel, and Think</i> about it. The very existance of the Mother Crystal is yet a further mystery the Scions of
+                the Seventh Dawn must reveal within <em>Final Fantasy XIV.</em> 
+
+                <br> <br>The Scions of the Seventh Dawn in <em> Final Fantasy XIV</em>  <!-- I may be trying to fill the word count a bit D;--> are first met with danger as they encounter an Ascian, who has taken over their very friend, 
+                Thancred. As they dig deeper into the secrets, they figure out that Garlemald and the Ascians may be linked together in some way. 
+
+                <br> <br>The script of <em> Final Fantasy XIV</em> is an incredibly well written story, and the further you dive into the story, the more you realize that nothing is what it may seem. 
+
+                You can read more about FFXIV on <a href="https://www.imdb.com/title/tt13991580/" style="text-decoration: none; color: rgb(76, 46, 185);">IMDB.</a>
+            </P>
+        </div>
+        
+        
+        
+        <br><br>
+        <div class="info" style="text-align: left; font-size: 18px">
+            <h3>TRIVIA</h3>
+            <ul>
+                <li>Did you know that Alphinaud is a very whiny character?</li>
+                <li>That Lalafells are the most evil entity, according to lore.</li>
+                <li>The space bunnies may one day save the future.</li>
+            </ul>
+        </div>
+
+        <!-- IMAGE ELEMENT WITH W3C VALIDATION OF THIS* PAGE -->
+<img src="images/valid_review.png">
+    </div>
+
+
+
+   
+    
+    <hr> <!-- RULE -->
+
+
+        
+
+        <!-- FOOTER BEGIN-->
+    <div id = "footer">
+        <a href="#header">Back Up</a>
+        <BR>
+    </div>
+
+   
+</body>
+</html>
