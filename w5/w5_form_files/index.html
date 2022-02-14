@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew Castro">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<!-- Leaving the guide comments you made, for future referencing. -->
+<body> 
+    <H1>Birthday Party Registration Form</H1> <!-- main header-->
+
+    <form action="confirm.html" method ="GET"> <!-- Begin form -->
+        <table> <!-- Begin tables -->
+            <thead>
+                <tr> <!-- INTRO CONTENT TITLES -->
+                    <td><!--first data cell in row (left)-->
+                        <h2>Labels</h2>
+                    </td>
+    
+                    <td><!--Second data cell in row (right)-->
+                        <h2>Form Fields</h2>
+                    </td>
+                </tr>
+            </thead>
+
+                <tbody>
+                    <tr> <!-- TABLE 1 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="g-first">Parent/Guardian Name </label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="text" id="g-first" name="gfirst"  maxlength="20"   placeholder ="First Name" required>
+                            <input type="text" id="g-last"  name="glast"   maxlength="20"   placeholder ="Last Name"  required>
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 2 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="c-first">Child's First Name:</label>
+                            <label for="age">Child's Age:</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="text"   id="c-frst" name="cfirst"placeholder ="Child's FirstName"     required>
+                            <input type="number" id="age"    name="age"   placeholder ="Last Name" value = "3" required>
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 3 // CONTENT TITLE -->
+                        <td><!--first data cell in row (left)-->
+                            <h2>Date and Time</h2>
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 4 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="date">Date</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="date" name="date" required>
+                        </td>
+                    </tr>
+
+
+                    <tr> <!-- TABLE 5 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="time">Start Time</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="time" name="time" id="s-time" required>
+                        </td>
+                    </tr>
+
+
+                    <tr> <!-- TABLE 6 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="guests">Number of Guests</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="number" name="guests">
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 7 // CONTENT TITLE -->
+                        <td><!--first data cell in row (left)-->
+                            <h2>Food</h2> <!-- yum-->
+                        </td>
+                    </tr>
+
+                    <tr><!-- TABLE 8 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="size">Size</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="radio" name="size" value="sm" id ="sm">sm 
+                            <input type="radio" name="size" value="md" id ="md">med
+                            <input type="radio" name="size" value="lg" id ="lg">lg
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 9 -->
+                        <td> <!--first data cell in row (left)-->
+                            Drinks
+                        </td>
+
+                        <td> <!--second data cell in row (right)-->
+                            <input type="checkbox" name="drink1" value="Coke"     id="drink1">Coke 
+                            <input type="checkbox" name="drink2" value="Sprite"   id="drink2">Sprite
+                            <input type="checkbox" name="drink3" value="Fruit Punch" id="drink3">Fruit Punch
+                            <input type="checkbox" name="drink4" value="Lemonade" id="drink4">Lemonade
+                            <input type="checkbox" name="drink5" value="Iced Tea" id="drink5">Iced Tea
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 10 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="cake">Cake</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <select name="faveColor">
+                                <option name="cake" id="cake">Chocolate</option>
+                                <option name="cake" id="cake">Vanilla</option>
+                                <option name="cake" id="cake" selected>I'll bring my own</option>   
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 11 // CONTENT TITLE -->
+                        <td><!--first data cell in row (left)-->
+                            <h2>Decorations</h2> <!-- yum-->
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 12 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="colors">Color Scheme</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="color" name="colors" id="colors">
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 13 -->
+                        <td><!--first data cell in row (left)-->
+                            <label for="comments">Additional Comments</label>
+                        </td>
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="text" placeholder ="Please add any additional comments.">
+                        </td>
+                    </tr>
+
+                    <tr> <!-- TABLE 14 // SUBMIT -->
+                        <td> </td> <!-- empty so submit can be in 2nd category.-->
+
+                        <td><!--second data cell in row (right)-->
+                            <input type="submit" value ="Submit">
+                        </td>
+                    </tr>
+
+
+
+
+                </tbody>
+        </table>
+    </form>
+    
+</body>
+</html>
