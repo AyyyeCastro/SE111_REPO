@@ -15,7 +15,7 @@ please don't worry about explaining it now.*/
 let hours = Number(prompt(`How many hours have you worked in these past two weeks?`)); /* User must input the value. That value will be changed to a NUMBER, from a string. 
                                                                                        The value given by the user will be assigned to the HOURS variable. */ 
 
-let wage = Number(prompt(`What is your hour pay?`));                                   /* User must input the value. That value will be changed to a NUMBER, from a string.
+let wage = Number(prompt(`What is your hourly pay?`));                                   /* User must input the value. That value will be changed to a NUMBER, from a string.
                                                                                        The value given by the user will be assigned to the WAGE variable. */
                                                                                        
 const tax = .20                                                                        /* The tax rate will be set to a CONSTANT (unchanging) NUMBER of .20 (20%). 
