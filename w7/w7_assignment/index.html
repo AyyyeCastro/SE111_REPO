@@ -9,10 +9,6 @@
     <title>Week 7 | Pay Form Calculator Assignment</title>
 </head>
 <body>
-
-    <!-- ⚠️ IF YOU ARE READING THIS RIGHT NOW, BONUS OBJECTIVES HAVEN'T BEEN DONE YET. JUST SUBMITTING NOW SO I DON'T FORGET.-->
-    <!-- IF BONUSES GET DONE, I WILL RE-SUBMIT THE ASSIGNMENT PRIOR TO DUE TIME, AND THIS COMMENT WON'T EXIST ANYMORE. ⚠️-->
-
     <!--title of the page-->
    <h1> Pay Calculator Form </h1>
 
@@ -20,53 +16,77 @@
    <!--each <input> must have an id that matches its corresponding label -->
    <!--each form element is separated by a break space (new line) -->
     <form>
-        <label for="first">First Name: </label>
-        <input type="text" id="first">
+        <!-- Bonus ⭐ Start-->
+        <table> <!-- Begin upper TABLE-->
+            <tr>
+                <td>   <!-- FIRST CAT-->
+                    <label for="first">First Name: </label>
+                </td> 
 
-        <br>
+                <td> 
+                    <input type="text" id="first">
+                </td>     
+            </tr>
 
-        <label for="last">Last Name: </label>
-        <input type="text" id="last">
+            <tr>
+                <td> <!-- FIRST CAT-->
+                    <label for="last">Last Name: </label>
+                </td>    
 
-        <br>
+                <td>
+                    <input type="text" id="last">
+                </td>
+            </tr>    
+            
+            <tr>
+                <td> <!-- FIRST CAT-->
+                    <label for="hours">Hours Worked: </label>
+                </td>    
+                
+                <td>
+                    <input type="text" id="hours">
+                </td>
+            </tr>    
+            
+            <tr>
+                <td> <!-- FIRST CAT-->
+                    <label for="rate">Hourly Rate: </label>
+                </td>
 
-        <label for="hours">Hours Worked: </label>
-        <input type="text" id="hours">
-
-        <br>
-
-        <label for="rate">Hourly Rate: </label>
-        <input type="text" id="rate">
-
-        <br>
-
-        <br>
+                <td>
+                    <input type="text" id="rate">
+                </td>    
+            </tr>
+        </table>    <!-- end of upper TABLE-->
+        <!-- Bonus ⭐ End-->
 
 
+            <br>
+            <br>
 
-        <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-        <input type="button" id="enter-button" value="Enter">
+            <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
+            <input type="button" id="enter-button" value="Enter">
 
-        <br>
-        <br>
+            <br>
+            <br>
 
-        <div id="final" style="border:1px solid rgb(87, 86, 86); padding:15px; background-color:rgb(168, 168, 168);">
+            <div id="final" style="border:1px solid rgb(87, 86, 86); padding:15px; background-color:rgb(168, 168, 168);">
 
-            <h3>Employee Info: </h3>
-            <p id="info" style="font-family:Courier New, monospace;"><i>Information will be loaded once above form is filled.</i></p>
-            <!---NOTES FOR TESTING:
-                    *below is where the form values (and new values processed by the js) will be displayed-->
-            <p id="check" style="font-family:Courier New, monospace; width:220px; text-align:right;"></p>
-        </div>
+                <h3>Employee Info: </h3>
+                <p id="info" style="font-family:Courier New, monospace;"><i>Information will be loaded once above form is filled.</i></p>
+                <!---NOTES FOR TESTING:
+                        *below is where the form values (and new values processed by the js) will be displayed-->
+                <p id="check" style="font-family:Courier New, monospace; width:220px; text-align:right;"></p>
+            </div>
 
-        <br>
-        <br>
+            <br>
+            <br>
 
-        <!--NOTES FOR TESTING:
-                *clicking the below button will trigger a call to the submitNow()
-                *success will be determined if correct info is displayed in the alert()-->
-        <h3><i>If the above information is correct, please press "SUBMIT"</i></h3>
-        <input type="button" id="submit" value="SUBMIT">
+            <!--NOTES FOR TESTING:
+                    *clicking the below button will trigger a call to the submitNow()
+                    *success will be determined if correct info is displayed in the alert()-->
+            <h3><i>If the above information is correct, please press "SUBMIT"</i></h3>
+            <input type="button" id="submit" value="SUBMIT">
     </form>
 
     <script>
