@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 2 Files</title>
+<style type="text/css">
+	.border{border:1px solid rgb(0, 0, 0);}
+</style>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+	//Use this Array of objects to complete the assignment.
+	var people =[
+		{first:"Jason",    last:"Vorhees",              credit:"Friday the 13th"},
+		{first:"Freddy",   last:"Krueger",              credit:"A Nightmare on Elm Street" },
+		{first:"Roger",    last:"Rabbit",               credit:"Who Framed Roger Rabbit" },
+		{first:"Kevin",    last:"McCallister",          credit:"Home Alone" },
+		{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+		{first:"Buzz",     last:"Lightyear",            credit:"Toy Story" },
+		{first:"Marion",   last:"Cobretti",             credit:"Cobra" }
+	]
+	 
+	var body = document.querySelector(`body`)                       /* Query Select the <body> tag and store it in a variable. */ 
+
+	for(let i = 0; i < people.length; i++)                          /* Loop through the array of objects */ 
+   	{
+      	var tempDiv = document.createElement(`div`)               /* Declare a local variable called tempDiv , using document.createElement() and store it in tempDiv.*/
+
+			body.appendChild(tempDiv)                                 /* Append the tempDiv to the body tag. */  
+
+			tempDiv.setAttribute(`id`, i)                             /* Apply an id to each div using the incrementor as the id  */
+
+			tempDiv.setAttribute(`class`, "border")                   /* In addition, use setAttribute() to give each div a class="border" */ 
+
+
+			for(key in people[i])                                     /* Use a for/in loop within the for loop to add each property of the object into the div. */ 
+            {
+                var p = document.createElement(`p`)                /* Create a <p> element for each property in the object */
+
+                var text = document.createTextNode(people[i][key]) /* Create a textNode for each <p> and use the value of each property for the text. */
+                 
+                p.appendChild(text)                                /* Append the text node to the p tag */
+                tempDiv.appendChild(p)                             /* Append the <p> tag to the <div> */ 
+            }
+			}		
+				
+/* Thank you for the course! Your teaching methods were/are very helpful to me. */
+</script>
+</html>
